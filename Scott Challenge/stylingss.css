@@ -1,0 +1,138 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background: #e3f9ff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background: #fff;
+    height: 80vh;
+    width: 70%;  
+}
+ .image{
+    flex-basis: 45%;
+ }
+ .image img{
+   width: 450px;
+   height: 80vh;
+   margin-right: 30px;
+ }
+  form{
+    display: inline-block;
+  }
+ .form{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    padding-top: 15px;
+ }
+ .form h1{
+      color: blueviolet;
+      align-self: center;
+ }
+ .form a{
+    color: blueviolet;
+ }
+  .input-field input{
+    height: 30px;
+    width: 300px;
+    background-color: rgba(240, 234, 234, 0.847);
+    padding-left: 10px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    outline: none;
+ }
+ .hidden{
+    position: absolute;
+    align-self: center;
+    padding-right: 50px;
+    box-sizing: border-box;
+    height: 1rem;
+    width: 1rem;
+    right: 19%;
+    transform: translate(-50%, 50%);
+ }
+  .check input{
+    padding: 0;
+    margin: 0;
+ }
+ .check-box{
+    margin-bottom: 7px;
+ }
+ button{
+    height: 30px;
+    width: 300px;
+    color: #fff;
+    background-color: blueviolet;
+    border: 5px solid blueviolet;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px 0;
+ }
+ .Google-signup{
+    height: 30px;
+    width: 300px;
+    font-size: 12px;
+    color: black;
+    background-color: #fff;
+    border: 1.5px solid blueviolet;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-size: 80%;
+    align-items: center;
+    position: relative;
+ }
+ .create-password .error{
+    align-items: flex-start;
+ }
+ .create-password .error-text{
+    margin-top: 4px;
+ }
+ .google{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    left: 70px;
+    box-sizing: border-box;
+ }
+  .sign{
+    position: absolute;
+    align-self: center;
+    height: 1.5rem;
+    width: 1.2rem;
+    left: 100px;
+    padding-bottom: 9px;
+    box-sizing: border-box;
+    padding-left: 2px;
+  }
+  .error{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    color: #e12518;
+   display: none;
+  }
+  .error-text{
+    height: 0.7rem;
+    width: 0.7rem;
+    margin-right: 3px;
+    
+  }
+  span p{
+    font-size: 10px;
+    justify-self: flex-start;
+  }

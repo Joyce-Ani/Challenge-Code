@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+   <link rel="stylesheet" href="stylingss.css">
+</head>
+<body>
+      <div class="Box">
+    <div class="image">
+        <img src="Images/bad-story-1772283_1280.jpg" alt="Alternative image">
+    </div>
+
+    <div class="form">
+      <h1>Create an Account</h1>
+      <br>
+
+    <form id="form" action="#" method="POST" onsubmit="return validateForm()">
+
+    <div class="field">
+        <div class="input-field">
+        <input type="text" id="username" name="username" placeholder="Username" required>
+       </div>
+        <span id="usernameError" class="error">
+            <img src="Images/alert-sign.png" alt="error icon" class="error-text">
+            <p>Please enter your Username</p> 
+        </span>
+    </div><br>
+        
+    <div class="field">
+        <div class="input-field" >
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        </div>
+        <span id="emailError" class="error">
+            <img src="Images/alert-sign.png" alt="error icon" class="error-text">
+            <p>Please enter valid email</p>
+        </span>
+    </div><br>
+
+    <div class="field create-password">
+        <div class="input-field">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <img src="Images/hide.png" alt="hidden eye" class="hidden">
+       </div>
+        <span id="passwordError" class="error">
+            <img src="Images/alert-sign.png" alt="error icon" class="error-text">
+        <p>Please enter atleast 8 Character, with number, symbole, <br> samll and capital letter.</p>
+        </span>
+    </div>  <br>   
+        
+        <div class="check-box">
+        <input type="checkbox" class="check"> <span>I accept the <a href="http://">terms and conditions</a></span> 
+        </div>
+        
+        <button type="submit"><img src="Images/user-plus.png" alt="Persona image" class="sign">Sign Up</button> <br>
+
+        <p style="padding: 8px 0;">Or</p>
+        
+        <button class="Google-signup"><img src="Images/search (1).png" alt="Google Icon" class="google">Sign Up with Google</button>
+        <br>
+
+        <p style="font-size: small; margin-top: 10px;">Already have an account? <a href="http://" style="font-weight: bold;">Sign in</a></p>
+    </form>
+</div> 
+</div>
+
+    <script>
+     
+        // Liste d'emails déjà utilisés
+      /*  const usedEmails = [
+            "exemple1@email.com",
+            "exemple2@email.com",
+            "exemple3@email.com",
+            "exemple4@email.com",
+            "exemple5@email.com",
+            "exemple6@email.com",
+            "exemple7@email.com",
+            "exemple8@email.com",
+            "exemple9@email.com",
+            "exemple10@email.com"
+        ];
+
+        // Fonction de validation du formulaire
+        function validateForm() {
+            let isValid = true;
+            
+            // Réinitialisation des erreurs
+            document.getElementById("usernameError").textContent = "";
+            document.getElementById("emailError").textContent = "";
+            document.getElementById("passwordError").textContent = "";
+
+            // Validation du nom d'utilisateur
+            const username = document.getElementById("username").value;
+            if (username.length < 3) {
+                document.getElementById("usernameError").textContent = "Username must be atleast 3 characters long";
+                isValid = false;
+            }
+
+            // Validation de l'email
+            const email = document.getElementById("email").value;
+            if (!email) {
+                document.getElementById("emailError").textContent = "L'email est obligatoire.";
+                isValid = false;
+            } 
+            else {
+              const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+              if (!emailRegex.test(email)) {
+                document.getElementById("emailError").textContent = "Please enter a valid email address.";
+                 isValid = false;
+              } 
+            else if (usedEmails && usedEmails.includes(email)) {
+                 document.getElementById("emailError").textContent = "This email address is already in use.";
+            isValid = false;
+            }
+            //else if (usedEmails.includes(email)) {
+               // document.getElementById("emailError").textContent = "Cette adresse email est déjà utilisée.";
+               // isValid = false;
+            
+
+            // Validation du mot de passe
+            const password = document.getElementById("password").value;
+            const passwordRegex = /^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[!@#$%^&()_+={}:;<>?])[A-Za-z\d!@#$%^&()_+={}:;<>?]{8,}$/;
+        if (!password) {
+                document.getElementById("passwordError").textContent = "Le mot de passe est obligatoire.";
+                isValid = false;
+            } 
+        else if (!passwordRegex.test(password)) {
+                document.getElementById("passwordError").textContent = "Le mot de passe doit contenir au moins 8 caractères, une lettre minuscule, une lettre majuscule, un chiffre et un caractère spécial.";
+                isValid = false;
+            }
+            return isValid;
+        }*/
+    </script>
+
+</body>
+</html>
